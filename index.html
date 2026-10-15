@@ -179,9 +179,8 @@
             <div class="project-year">2025</div>
           </div>
           <div class="project-desc">
-            Enhanced open-vocabulary detection: YOLOv9 GELAN+PGI backbone and a CLIP-conditioned FiLM-PAN neck.
-            52.2 AP on COCO val2017 (+1.2 over YOLO-World-L, +0.8 over GLIP-T with 4.2x fewer params),
-            with small-object and zero-shot LVIS gains. Published in ELCVIA (Scopus).
+            Enhanced open-vocabulary detector: YOLOv9+PGI backbone and a CLIP-conditioned FiLM-PAN neck.
+            52.2 AP on COCO (+1.2 over YOLO-World-L), 4.2x fewer params than GLIP-T. Published in ELCVIA (Scopus).
           </div>
           <div class="project-tags">
             <span class="tag blue">Object Detection</span>
@@ -201,11 +200,9 @@
             <div class="project-year">2026</div>
           </div>
           <div class="project-desc">
-            First benchmark for vocabulary-drift failures in open-vocabulary detection. 49 term-shift events across
-            7 MOT17 sequences (30-frame windows) on YOLO-World. Introduces the Recall_AT metric. Finding: detection
-            recall collapses when a class word is swapped - 'pedestrian' alone scores about 0.02 recall, but adding
-            'person' recovers it to 0.84 - and CLIP similarity does not predict this ('human' is CLIP-closest to
-            'person', cosine 0.91, yet scores 0.00). Literal token presence predicts recall, not semantic proximity.
+            First benchmark for vocabulary-drift failure in open-vocabulary detection (49 term-shifts, 7 MOT17 sequences, YOLO-World).
+            Recall collapses on a word swap - 'pedestrian' ~0.02, +'person' -> 0.84 - and CLIP similarity doesn't predict it.
+            New metric: Recall_AT.
           </div>
           <div class="project-tags">
             <span class="tag blue">Benchmark</span>
